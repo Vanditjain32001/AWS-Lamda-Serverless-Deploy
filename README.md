@@ -1,1 +1,1 @@
-# Deploy Your Function on AWS Lambda For Serverless Framework
+# Deploy Your Functions on AWS Lambda For Serverless Framework
