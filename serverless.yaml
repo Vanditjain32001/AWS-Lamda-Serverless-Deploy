@@ -1,0 +1,20 @@
+service: aws-lambda-1
+
+provider:
+  name: aws
+  runtime: go1.x
+  region: ap-south-1
+
+functions:
+  blogExample:
+    handler: bootstrap
+    events:
+      - http:
+          method: get
+          path: blogExample
+          cors:
+            origin: "*"
+            headers: "*"
+    package:
+      individually: true
+      artifact: bootstrap.zip
